@@ -1,0 +1,68 @@
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.about {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.contact-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header,
+    .hero,
+    .about,
+    .testimonials,
+    .contact-form {
+        padding: 15px;
+    }
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh;
+        font-size: 0.8em;
+    }
+}
